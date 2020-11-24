@@ -1,0 +1,74 @@
+.background-scroll-down {
+    background-color: #fff !important;
+    transition: background-color 50ms ease;
+}
+
+@media (max-width:992px) {
+    #navbar {
+        background-color: #fff !important;
+    }
+    .navbar-light .navbar-toggler {
+        border-color: transparent !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #servicios {
+        .titulo {
+            padding-top: 1.5rem;
+        }
+    }
+    .nosotros {
+        .contador {
+            .card-contador {
+                img {
+                    max-height: 3.7rem;
+                    margin-right: 1rem;
+                }
+                .customer {
+                    h5 {
+                        font-size: 2.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .consultas {
+        p {
+            font-size: 1rem;
+        }
+        a {
+            font-size: 1.2rem;
+            img {
+                height: 2rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #portfolio {
+        .portfolio-menu {
+            ul {
+                padding: 0;
+                li {
+                    margin-left: 2rem;
+                    &:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 397px) {
+    .consultas {
+        a {
+            font-size: 1rem;
+            img {
+                height: 1.5rem;
+            }
+        }
+    }
+}

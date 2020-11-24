@@ -23,19 +23,19 @@
         </div>
 
         <header id="home">
-            <x-navbar></x-navbar>
+            <x-navbar data-aos="fade-in"></x-navbar>
             <div class="bg-index">
                 <img class="bg-circle" src="{{ asset('/img/index/circle1.svg') }}" alt="">
-                <img class="bg-circle" src="{{ asset('/img/index/circle2.svg') }}" alt="">
+                <img class="bg-circle d-none d-lg-block" src="{{ asset('/img/index/circle2.svg') }}" alt="">
                 <div class="container">
                     <div class="hero">
                         <div class="row align-items-center">
-                            <div class="col-lg-5">
+                            <div class="col-lg-5" data-aos="fade-right">
                                 <h1>Desarrollo web y aplicaciones móviles en Paraguay</h1>
                                 <p>La tecnología se esta moviendo más rápido que nunca, actualízate antes que tu competencia lo haga.</p>
                                 <a href="#" class="btn btn-grad btn-lg text-uppercase d-block">QUIERO MI SITIO WEB</a>
                             </div>
-                            <div class="col-lg-7">
+                            <div class="col-lg-7" data-aos="fade-left">
                                 <img src="{{ asset('/img/index/ordenadores.png') }}" class="img-orde img-fluid" alt="Ordenadores">
                             </div>
                         </div>
@@ -50,7 +50,7 @@
 
                 <div class="row pt-3">
                     <div class="col-md-4">
-                        <div class="titulo d-flex align-items-end">
+                        <div class="titulo d-flex align-items-end pt-0">
                             <img src="{{ asset('/img/icons/icon-web.svg') }}" alt="">
                             <h4>Sistema Web</h4>
                         </div>
@@ -96,7 +96,7 @@
             </div>
         </section>
 
-        <section class="nosotros" id="nosotros">
+        <section class="nosotros" id="nosotros" data-aos="fade" data-aos-duration="1000">
             <div class="container py-5">
                 <div class="row ">
                     <div class="col-md-5">
@@ -135,8 +135,8 @@
             <div class="container py-5">
                 <h2 class="my-3 text-center text-gray">Por qué elegir a PUNTOCODE?</h2>
 
-                <div class="row py-4">
-                    <div class="col-md-3">
+                <div class="row pt-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-responsive.svg') }}" alt="" width="100px">
@@ -145,7 +145,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-ux.svg') }}" alt="" width="100px">
@@ -154,7 +154,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-velocity.svg') }}" alt="" width="100px">
@@ -163,7 +163,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-garanty.svg') }}" alt="" width="100px">
@@ -181,11 +181,11 @@
             <div class="container py-5">
 
                 <div class="row align-items-end">
-                    <div class="col-md-4">
+                    <div class="col-lg-4 col-md-3">
                         <h2 class="text-uppercase">proyectos</h2>
                         <p>Nuestro <span class="font-bold">Portfolio</span></p>
                     </div>
-                    <div class="col-md-8 text-right">
+                    <div class="col-lg-8 col-md-9 text-left text-md-right">
                         <div class="portfolio-menu">
                             <ul>
                                 <li class="active" data-filter="*">Ver Todos</li>
@@ -255,88 +255,21 @@
         <section class="consultas" id="contacto">
             <div class="container py-4">
                 <div class="row align-items-center">
-                    <div class="col-md-4">
+                    <div class="col-12 col-md-4">
                         <h2 class="m-0">Consultas?</h2>
                         <p>estamos para ayudarte</p>
                     </div>
-                    <div class="col-md-4">
-                        <a href="https://wa.link/tkxbmn"><img src="{{ asset('/img/icons/icon-whatsapp.svg') }}" alt="">0971643957</a>
+                    <div class="col-6 col-md-4 pt-3 p-md-0">
+                        <a href="https://wa.link/b13x2v"><img src="{{ asset('/img/icons/icon-whatsapp.svg') }}" alt="">0971643957</a>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-6 col-md-4 pt-3 p-md-0">
                         <a href="mailto:puntocodepy@gmail.com"><img src="{{ asset('/img/icons/icon-email.svg') }}" alt="">Enviar un email</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <footer>
-            <div class="container py-5">
-                <div class="row">
-
-                    <div class="col-lg-3">
-                        <img src="img/logo-footer.svg" alt="logo de la empresa" class="svg-white logo">
-                        <div class="redes mt-lg-4">
-                            <ul>
-                                <li>
-                                    <a href="https://www.facebook.com/puntocodepy"><img src="{{ asset('/img/icons/icon-facebook.svg') }}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.instagram.com/puntocodepy/"><img src="{{ asset('/img/icons/icon-instagram.svg') }}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.pinterest.es/puntocode/"><img src="{{ asset('/img/icons/icon-pinterest.svg') }}" alt=""></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.linkedin.com/company/puntocode-agencia-digital"><img src="{{ asset('/img/icons/icon-linkedin.svg') }}" alt=""></a>
-                                </li>
-                            </ul>
-                            <span>2020© Todos los derechos reservados</span>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3">
-                        <h4>Mapa del Sitio</h4>
-                        <ul class="accesos">
-                            <li><a href="">Inicio</a></li>
-                            <li><a href="">Servicios</a></li>
-                            <li><a href="">Portfolio</a></li>
-                            <li><a href="">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>Formas de Pago</h4>
-                        <ul class="forma-pago">
-                            <li><img src="{{ asset('/img/icons/icon-mastercard.svg') }}" alt="pago con mastercard"></li>
-                            <li><img src="{{ asset('/img/icons/icon-visa.svg') }}" alt="pago con visa"></li>
-                            <li><img src="{{ asset('/img/icons/icon-amex.svg') }}" alt="pago con american"></li>
-                            <li><img src="{{ asset('/img/icons/icon-cheque.svg') }}" alt="pago con cheque"></li>
-                            <li><img src="{{ asset('/img/icons/icon-efectivo.svg') }}" alt="pago con efectivo"></li>
-                            <li><img src="{{ asset('/img/icons/icon-billetera-personal.svg') }}" alt="billetera personal"></li>
-                            <li><img src="{{ asset('/img/icons/icon-tigo-money.svg') }}" alt="Tigo Money"></li>
-                            <li><img src="{{ asset('/img/icons/icon-vision.svg') }}" alt="Transferencia bancaria"></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>Contáctenos</h4>
-                        <ul class="contacto">
-                            <li>
-                                <a href=""><img src="{{ asset('/img/icons/icon-contacto-whatsapp.svg') }}" alt="icono de whatsapp">0971643957</a>
-                            </li>
-                            <li>
-                                <a href=""><img src="{{ asset('/img/icons/icon-contacto-gmail.svg') }}" alt="icono de gmail">puntocodepy@gmail.com</a>
-                            </li>
-                            <li>
-                                <a href=""><img src="{{ asset('/img/icons/icon-contacto-mail.svg') }}" alt="icono de email">info@puntocode.com.py</a>
-                            </li>
-                            <li>
-                                <a href=""><img src="{{ asset('/img/icons/icon-contacto-map.svg') }}" alt="icono de direccion">14 de Mayo 514 c/ Juan Centurión</a>
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </div>
-        </footer>
+        <x-footer></x-footer>
 
     </div>
 

@@ -19,11 +19,6 @@ body {
     }
 }
 
-.background-scroll-down {
-    background-color: #fff !important;
-    transition: background-color 50ms ease;
-}
-
 #home {
     height: 45rem;
     .bg-index {
@@ -104,30 +99,6 @@ body {
     }
 }
 
-.consultas {
-    background-image: linear-gradient(to right, $primary 0%, $secondary 51%, $primary 100%);
-    color: #fff;
-    p {
-        font-size: 1.5rem;
-        margin: 0;
-    }
-    a {
-        color: #fff;
-        font-size: 1.7rem;
-        text-decoration: none;
-        img {
-            filter: invert(1);
-            height: 2.5rem;
-            padding-right: .5rem;
-            margin-top: -.3rem;
-        }
-        &:hover {
-            text-decoration: none;
-            color: whitesmoke;
-        }
-    }
-}
-
 #portfolio {
     h2 {
         color: $primary;
@@ -183,6 +154,30 @@ body {
             position: relative;
             margin-bottom: 50px;
             box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
+        }
+    }
+}
+
+.consultas {
+    background-image: linear-gradient(to right, $primary 0%, $secondary 51%, $primary 100%);
+    color: #fff;
+    p {
+        font-size: 1.5rem;
+        margin: 0;
+    }
+    a {
+        color: #fff;
+        font-size: 1.7rem;
+        text-decoration: none;
+        img {
+            filter: invert(1);
+            height: 2.5rem;
+            padding-right: .5rem;
+            margin-top: -.3rem;
+        }
+        &:hover {
+            text-decoration: none;
+            color: whitesmoke;
         }
     }
 }
