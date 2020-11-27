@@ -23,19 +23,19 @@
         </div>
 
         <header id="home">
-            <x-navbar data-aos="fade-in"></x-navbar>
+            <x-navbar></x-navbar>
             <div class="bg-index">
                 <img class="bg-circle" src="{{ asset('/img/index/circle1.svg') }}" alt="">
                 <img class="bg-circle d-none d-lg-block" src="{{ asset('/img/index/circle2.svg') }}" alt="">
                 <div class="container">
                     <div class="hero">
                         <div class="row align-items-center">
-                            <div class="col-lg-5" data-aos="fade-right">
-                                <h1>Desarrollo web y aplicaciones móviles en Paraguay</h1>
-                                <p>La tecnología se esta moviendo más rápido que nunca, actualízate antes que tu competencia lo haga.</p>
-                                <a href="#" class="btn btn-grad btn-lg text-uppercase d-block">QUIERO MI SITIO WEB</a>
+                            <div class="col-lg-5">
+                                <h1 class="wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Desarrollo web y aplicaciones móviles en Paraguay</h1>
+                                <p class=" wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">La tecnología se esta moviendo más rápido que nunca, actualízate antes que tu competencia lo haga.</p>
+                                <a href="#" class="btn btn-grad btn-lg text-uppercase d-block wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">QUIERO MI SITIO WEB</a>
                             </div>
-                            <div class="col-lg-7" data-aos="fade-left">
+                            <div class="col-lg-7 wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
                                 <img src="{{ asset('/img/index/ordenadores.png') }}" class="img-orde img-fluid" alt="Ordenadores">
                             </div>
                         </div>
@@ -46,45 +46,44 @@
 
         <section class="hacemos" id="servicios">
             <div class="container pb-5">
-                <h2 class="text-center pt-5 pb-3">QUE HACEMOS</h2>
-
+                <h2 class="text-center pt-5 pb-3 wow animate__fadeIn" data-wow-duration="1s">QUE HACEMOS</h2>
                 <div class="row pt-3">
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end pt-0">
                             <img src="{{ asset('/img/icons/icon-web.svg') }}" alt="">
                             <h4>Sistema Web</h4>
                         </div>
                         <p>Análisis y desarrollo a medida de software para todo tipo de empresas o particulares.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end">
                             <img src="{{ asset('/img/icons/icon-app.svg') }}" alt="">
                             <h4>Aplicaciones Moviles</h4>
                         </div>
                         <p>Análisis, estudio y desarrollo utilizando conexión en tiempo real y diseño único e interactivo.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end">
                             <img src="{{ asset('/img/icons/icon-branding.svg') }}" alt="">
                             <h4>Branding</h4>
                         </div>
                         <p>Nos encargaremos de darle a tu empresa identidad única de manera a ser fácilmente reconocible en el mercado.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end">
                             <img src="{{ asset('/img/icons/icon-pag.svg') }}" alt="">
                             <h4>Landing page</h4>
                         </div>
                         <p>Diseño de páginas web con estilo único y exclusivo utilizando lo último en estructura de sitios.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end">
                             <img src="{{ asset('/img/icons/icon-seo.svg') }}" alt="">
                             <h4>Posicionamietno Google</h4>
                         </div>
                         <p>Hágase conocer en google y permita que sus potenciales clientes lo encuentren fácilmente.</p>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="titulo d-flex align-items-end">
                             <img src="{{ asset('/img/icons/icon-asesoria-server.svg') }}" alt="">
                             <h4>Asesoría Informática</h4>
@@ -96,15 +95,15 @@
             </div>
         </section>
 
-        <section class="nosotros" id="nosotros" data-aos="fade" data-aos-duration="1000">
+        <section class="nosotros" id="nosotros">
             <div class="container py-5">
                 <div class="row ">
-                    <div class="col-md-5">
+                    <div class="col-md-5 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                         <img src="{{ asset('/img/index/nosotros.png') }}" class="img-fluid" alt="Imagen sobre nosotros">
                     </div>
 
-                    <div class="col-md-7">
-                        <h3 class="text-uppercase text-secondary pt-3">nosotros</h3>
+                    <div class="col-md-7 wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <h3 class="text-uppercase text-secondary pt-3 wow animate__bounce">nosotros</h3>
                         <p>Somos una empresa 100% Paraguaya, innovadora y altamente capacitada en diseño y desarrollo de sitios web y aplicaciones móviles, con muchas ganas de que tus proyectos se hagan realidad.</p>
 
                         <div class="contador d-flex">
@@ -112,7 +111,7 @@
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/customer.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold"><span class="count">50</span>+</h5>
+                                    <h5 class="font-weight-bold text-count d-none"><span class="count">50</span>+</h5>
                                     <p>Clientes</p>
                                 </div>
                             </div>
@@ -120,7 +119,7 @@
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/project.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold"><span class="count">200</span>+</h5>
+                                    <h5 class="font-weight-bold text-count d-none"><span class="count">200</span>+</h5>
                                     <p>Proyectos</p>
                                 </div>
                             </div>
@@ -133,9 +132,9 @@
 
         <section class="elegir">
             <div class="container py-5">
-                <h2 class="my-3 text-center text-gray">Por qué elegir a PUNTOCODE?</h2>
+                <h2 class="my-3 text-center text-gray wow animate__fadeInUp" data-wow-duration="1s">Por qué elegir a PUNTOCODE?</h2>
 
-                <div class="row pt-4">
+                <div class="row pt-4 wow animate__fadeIn" data-wow-duration="1s">
                     <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
@@ -145,7 +144,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-ux.svg') }}" alt="" width="100px">
@@ -154,7 +153,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-velocity.svg') }}" alt="" width="100px">
@@ -163,7 +162,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4">
+                    <div class="col-sm-6 col-md-6 col-lg-3 pb-4 wow animate__fadeIn" data-wow-duration="1s">
                         <div class="card border-0 shadow-sm">
                             <div class="card-body text-center">
                                 <img src="{{ asset('/img/icons/icon-garanty.svg') }}" alt="" width="100px">
@@ -181,11 +180,11 @@
             <div class="container py-5">
 
                 <div class="row align-items-end">
-                    <div class="col-lg-4 col-md-3">
+                    <div class="col-lg-4 col-md-3  wow animate__fadeInUp" data-wow-duration="1s">
                         <h2 class="text-uppercase">proyectos</h2>
                         <p>Nuestro <span class="font-bold">Portfolio</span></p>
                     </div>
-                    <div class="col-lg-8 col-md-9 text-left text-md-right">
+                    <div class="col-lg-8 col-md-9 text-left text-md-right  wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <div class="portfolio-menu">
                             <ul>
                                 <li class="active" data-filter="*">Ver Todos</li>
@@ -253,16 +252,16 @@
         </section>
 
         <section class="consultas" id="contacto">
-            <div class="container py-4">
+        <div class="container py-4">
                 <div class="row align-items-center">
-                    <div class="col-12 col-md-4">
+                    <div class="col-12 col-md-4 wow animate__fadeInUp" data-wow-duration="1s">
                         <h2 class="m-0">Consultas?</h2>
                         <p>estamos para ayudarte</p>
                     </div>
-                    <div class="col-6 col-md-4 pt-3 p-md-0">
+                    <div class="col-6 col-md-4 pt-3 p-md-0 wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <a href="https://wa.link/b13x2v"><img src="{{ asset('/img/icons/icon-whatsapp.svg') }}" alt="">0971643957</a>
                     </div>
-                    <div class="col-6 col-md-4 pt-3 p-md-0">
+                    <div class="col-6 col-md-4 pt-3 p-md-0 wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
                         <a href="mailto:puntocodepy@gmail.com"><img src="{{ asset('/img/icons/icon-email.svg') }}" alt="">Enviar un email</a>
                     </div>
                 </div>
@@ -276,6 +275,7 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script> -->
     <script src="{{ asset('js/main.js') }}"></script>
 </body>
 </html>

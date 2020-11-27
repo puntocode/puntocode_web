@@ -2,7 +2,7 @@
     <div class="container py-5">
         <div class="row">
 
-            <div class="col-lg-3 mb-5">
+            <div class="col-lg-3 mb-5 wow animate__fadeInLeftBig" data-wow-duration="1s">
                 <img src="img/logo-footer.svg" alt="logo de la empresa" class="svg-white logo">
                 <div class="redes mt-lg-4">
                     <ul>
@@ -23,7 +23,7 @@
                 </div>
             </div>
 
-            <div class="col-lg-3 mb-4">
+            <div class="col-lg-3 mb-4 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.3s">
                 <h4>Mapa del Sitio</h4>
                 <ul class="accesos">
                     <li><a href="/#home">Inicio</a></li>
@@ -32,7 +32,7 @@
                     <li><a href="">Blog</a></li>
                 </ul>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-lg-3 mb-4 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
                 <h4>Formas de Pago</h4>
                 <ul class="forma-pago">
                     <li><img src="{{ asset('/img/icons/icon-mastercard.svg') }}" alt="pago con mastercard"></li>
@@ -45,7 +45,7 @@
                     <li><img src="{{ asset('/img/icons/icon-vision.svg') }}" alt="Transferencia bancaria"></li>
                 </ul>
             </div>
-            <div class="col-lg-3 mb-4">
+            <div class="col-lg-3 mb-4 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.7s">
                 <h4>Contáctenos</h4>
                 <ul class="contacto">
                     <li>

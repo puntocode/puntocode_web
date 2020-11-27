@@ -24,6 +24,8 @@
         "vue-template-compiler": "^2.6.10"
     },
     "dependencies": {
-        "aos": "^2.3.4"
+        "animate.css": "^4.1.1",
+        "aos": "^2.3.4",
+        "wow.js": "^1.2.2"
     }
 }
