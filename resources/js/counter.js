@@ -12,9 +12,13 @@ function isScrolledIntoView(elem) {
 }
 
 function testScroll() {
-    if (isScrolledIntoView($("#nosotros")) && !viewed) {
+    if (isScrolledIntoView($('.contador')) && !viewed) {
         viewed = true;
-        let contador = $('.count');
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
+        });
+        /*let contador = $('.count');
         $('.text-count').removeClass('d-none');
         contador.each(function() {
             $(this).prop('Counter', 0).animate({
@@ -26,7 +30,7 @@ function testScroll() {
                     $(this).text(Math.ceil(now));
                 }
             });
-        });
+        });*/
     }
 
 }

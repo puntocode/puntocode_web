@@ -36,3 +36,8 @@ $(".card").hover(
         $(this).removeClass('shadow-lg');
     }
 );
+
+/*$('.counter').counterUp({
+    delay: 10,
+    time: 2000
+});*/

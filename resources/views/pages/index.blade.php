@@ -111,7 +111,7 @@
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/customer.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold text-count d-none"><span class="count">50</span>+</h5>
+                                    <h5 class="font-weight-bold text-count d-none"><span class="counter">50</span>+</h5>
                                     <p>Clientes</p>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/project.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold text-count d-none"><span class="count">200</span>+</h5>
+                                    <h5 class="font-weight-bold text-count d-none"><span class="counter">200</span>+</h5>
                                     <p>Proyectos</p>
                                 </div>
                             </div>
@@ -274,8 +274,10 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script> -->
-    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
+    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 </html>
