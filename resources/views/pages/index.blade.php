@@ -1,16 +1,19 @@
 <!doctype html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- CSRF Token -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta name="author" content="Puntocode Paraguay">
+    <meta name="robots" content="ALL">
+    <meta name="robots" content="INDEX,FOLLOW">
+
     <title>Puntocode Paraguay</title>
 
-    <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="{{ asset('images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+    <link rel="alternate" hreflang="es-PY" href="http://www.puntocode.com.py" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -18,6 +21,7 @@
 <body data-spy="scroll" data-target="#navbar" data-offset="400">
     <div id="app">
 
+        <a href="https://wa.link/b13x2v" class="whatsapp d-md-none" target="_blank"><img src="{{ asset('/img/icons/icon-contacto-whatsapp.svg') }}" alt="icono de whatsapp"></a>
         <div class="loader-container">
             <div class="loader"></div>
         </div>

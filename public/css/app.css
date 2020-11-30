@@ -4398,6 +4398,25 @@ footer .contacto a {
   filter: invert(1);
 }
 
+.whatsapp {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  z-index: 100;
+}
+
+.whatsapp img {
+  filter: invert(1);
+  height: 1.8rem;
+}
+
 .background-scroll-down {
   background-color: #fff !important;
   transition: background-color 50ms ease;
