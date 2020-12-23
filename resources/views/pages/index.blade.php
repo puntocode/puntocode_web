@@ -12,16 +12,16 @@
 
     <title>Puntocode Paraguay</title>
 
-    <link href="{{ asset('images/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
+    <link href="{{ asset('img/favicon.ico') }}" rel="shortcut icon" type="image/x-icon">
     <link rel="alternate" hreflang="es-PY" href="http://www.puntocode.com.py" />
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="400">
-    <div id="app">
+    <div id="app" class="overflow-hidden">
 
-        <a href="https://wa.link/b13x2v" class="whatsapp d-md-none" target="_blank"><img src="{{ asset('/img/icons/icon-contacto-whatsapp.svg') }}" alt="icono de whatsapp"></a>
+        <a href="https://wa.link/b13x2v" class="whatsapp d-md-none" target="_blank"><img src="{{ asset('/img/icons/icon-whatsapp.svg') }}" alt="icono de whatsapp"></a>
         <div class="loader-container">
             <div class="loader"></div>
         </div>
@@ -102,20 +102,21 @@
         <section class="nosotros" id="nosotros">
             <div class="container py-5">
                 <div class="row ">
-                    <div class="col-md-5 wow animate__fadeInLeftBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="col-md-5 wow animate__fadeInLeft">
                         <img src="{{ asset('/img/index/nosotros.png') }}" class="img-fluid" alt="Imagen sobre nosotros">
                     </div>
 
-                    <div class="col-md-7 wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="0.7s">
-                        <h3 class="text-uppercase text-secondary pt-3 wow animate__bounce">nosotros</h3>
-                        <p>Somos una empresa 100% Paraguaya, innovadora y altamente capacitada en diseño y desarrollo de sitios web y aplicaciones móviles, con muchas ganas de que tus proyectos se hagan realidad.</p>
+                    <div class="col-md-7">
+                        <h3 class="text-uppercase text-secondary pt-3 wow animate__fadeInUp">nosotros</h3>
+                        <p class="wow animate__fadeInUp" data-wow-delay="0.5s">Somos una empresa 100% Paraguaya, innovadora y altamente capacitada en diseño y desarrollo de sitios web y aplicaciones móviles, con muchas ganas de que tus proyectos se hagan realidad.</p>
 
-                        <div class="contador d-flex">
+                        <div class="contador d-flex wow animate__fadeIn" data-wow-delay="0.7s">
 
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/customer.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold text-count d-none"><span class="counter">50</span>+</h5>
+                                    <!-- <h5 class="font-weight-bold text-count">+<Counter :valor="50" v-on:scroll.passive="handleScroll"/></h5> -->
+                                    <h5 class="font-weight-bold text-count">+<span id="counter">50</span></h5>
                                     <p>Clientes</p>
                                 </div>
                             </div>
@@ -123,10 +124,11 @@
                             <div class="card-contador">
                                 <img src="{{ asset('/img/index/project.svg') }}" alt="">
                                 <div class="customer">
-                                    <h5 class="font-weight-bold text-count d-none"><span class="counter">200</span>+</h5>
+                                    <h5 class="font-weight-bold text-count">+<span id="counter2">200</span></h5>
                                     <p>Proyectos</p>
                                 </div>
                             </div>
+
                         </div>
                     </div>
 
@@ -182,76 +184,7 @@
 
         <section id="portfolio">
             <div class="container py-5">
-
-                <div class="row align-items-end">
-                    <div class="col-lg-4 col-md-3  wow animate__fadeInUp" data-wow-duration="1s">
-                        <h2 class="text-uppercase">proyectos</h2>
-                        <p>Nuestro <span class="font-bold">Portfolio</span></p>
-                    </div>
-                    <div class="col-lg-8 col-md-9 text-left text-md-right  wow animate__fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
-                        <div class="portfolio-menu">
-                            <ul>
-                                <li class="active" data-filter="*">Ver Todos</li>
-                                <li data-filter=".web">Web</li>
-                                <li data-filter=".apps">Apps</li>
-                                <li data-filter=".branding">Branding</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="portfolio-item">
-                    <div class="row">
-                        <div class="col-lg-4 item web">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-1.jpg') }}" alt="Portfolio de biolimpieza">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item branding">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-2.jpg') }}" alt="Portfolio de Roman">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item apps">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-3.jpg') }}" alt="Portfolio de Ruth">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item branding">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-4.jpg') }}" alt="Portfolio de Osval">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item web">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-5.jpg') }}" alt="Portfolio de Zandona">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item apps">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-6.jpg') }}" alt="Portfolio de Puntocode">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item apps">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-7.jpg') }}" alt="Portfolio de Fisiostetik">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item branding">
-
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-8.jpg') }}" alt="Portfolio de CristalPar">
-                            </div>
-                        </div>
-                        <div class="col-lg-4 item web">
-                            <div class="card">
-                                <img class="card-img-top" src="{{ asset('/img/index/portfolio-9.jpg') }}" alt="Portfolio de El Antiguo">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
+                    <portfolio-filter></portfolio-filter>
             </div>
         </section>
 
@@ -278,10 +211,5 @@
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" integrity="sha512-d8F1J2kyiRowBB/8/pAWsqUl0wSEOkG5KATkVV4slfblq9VRQ6MyDZVxWl2tWd+mPhuCbpTB4M7uU/x9FlgQ9Q==" crossorigin="anonymous"></script>
-    <script src="{{ asset('js/index.js') }}"></script>
 </body>
 </html>

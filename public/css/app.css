@@ -4221,7 +4221,7 @@ body {
 }
 
 .nosotros .contador .card-contador .customer h5 {
-  font-size: 4rem;
+  font-size: 3.5rem;
   margin: 0;
 }
 
@@ -4269,6 +4269,10 @@ body {
   margin-top: 10px;
 }
 
+#portfolio .portfolio-menu ul li:first-child {
+  margin-left: 0;
+}
+
 #portfolio .portfolio-menu ul li::before {
   position: absolute;
   content: "";
@@ -4291,7 +4295,7 @@ body {
 
 #portfolio .portfolio-item .card {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
   box-shadow: 1px 1px 1.5px rgba(0, 0, 0, 0.075);
 }
 
@@ -4402,14 +4406,14 @@ footer .contacto a {
   position: fixed;
   width: 60px;
   height: 60px;
-  bottom: 40px;
-  right: 40px;
+  bottom: 30px;
+  right: 25px;
   background-color: #25d366;
-  color: #FFF;
   border-radius: 50px;
-  text-align: center;
-  font-size: 30px;
   z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .whatsapp img {
@@ -4457,19 +4461,13 @@ footer .contacto a {
   .consultas a img {
     height: 2rem;
   }
-}
 
-@media (max-width: 576px) {
   #portfolio .portfolio-menu ul {
     padding: 0;
   }
 
   #portfolio .portfolio-menu ul li {
     margin-left: 2rem;
-  }
-
-  #portfolio .portfolio-menu ul li:first-child {
-    margin-left: 0;
   }
 }
 
@@ -4480,6 +4478,19 @@ footer .contacto a {
 
   .consultas a img {
     height: 1.5rem;
+  }
+
+  .nosotros .contador {
+    visibility: hidden;
+  }
+
+  .nosotros .contador .card-contador img {
+    max-height: 3rem;
+    margin-right: 1rem;
+  }
+
+  .nosotros .contador .card-contador .customer h5 {
+    font-size: 2rem;
   }
 }
 

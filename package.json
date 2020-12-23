@@ -12,6 +12,8 @@
     "devDependencies": {
         "axios": "^0.19",
         "bootstrap": "^4.0.0",
+        "browser-sync": "^2.26.13",
+        "browser-sync-webpack-plugin": "^2.0.1",
         "cross-env": "^7.0",
         "jquery": "^3.2",
         "laravel-mix": "^5.0.1",
@@ -25,7 +27,10 @@
     },
     "dependencies": {
         "animate.css": "^4.1.1",
-        "aos": "^2.3.4",
+        "counterup2": "^1.0.4",
+        "vue-countup": "^0.1.0",
+        "vue-countup-v2": "^4.0.0",
+        "waypoints": "^4.0.1",
         "wow.js": "^1.2.2"
     }
 }
