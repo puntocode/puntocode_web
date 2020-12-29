@@ -4402,6 +4402,10 @@ footer .contacto a {
   filter: invert(1);
 }
 
+.text-modal {
+  font-size: 11px;
+}
+
 .whatsapp {
   position: fixed;
   width: 60px;

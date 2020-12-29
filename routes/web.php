@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-})->name('pages.index');
+Route::get('/', [PagesController::class, 'index'])->name('pages.index');
+Route::post('/contacto-mail', [PagesController::class, 'contactoMail'])->name('enviar-consulta');
+
 Auth::routes();

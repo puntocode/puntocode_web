@@ -37,7 +37,7 @@
                             <div class="col-lg-5">
                                 <h1 class="wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.2s">Desarrollo web y aplicaciones móviles en Paraguay</h1>
                                 <p class=" wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">La tecnología se esta moviendo más rápido que nunca, actualízate antes que tu competencia lo haga.</p>
-                                <a href="#" class="btn btn-grad btn-lg text-uppercase d-block wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">QUIERO MI SITIO WEB</a>
+                                <button data-toggle="modal" data-target="#modalWeb" class="btn btn-grad btn-lg btn-block wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">QUIERO MI SITIO WEB</button>
                             </div>
                             <div class="col-lg-7 wow animate__fadeInRightBig" data-wow-duration="1s" data-wow-delay="1.1s">
                                 <img src="{{ asset('/img/index/ordenadores.png') }}" class="img-orde img-fluid" alt="Ordenadores">
@@ -206,6 +206,8 @@
         </section>
 
         <x-footer></x-footer>
+
+        <x-modal></x-modal>
 
     </div>
 
