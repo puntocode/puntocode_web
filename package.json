@@ -28,8 +28,10 @@
     "dependencies": {
         "animate.css": "^4.1.1",
         "counterup2": "^1.0.4",
+        "vue-button-spinner": "^2.2.1",
         "vue-countup": "^0.1.0",
         "vue-countup-v2": "^4.0.0",
+        "vue-sweetalert2": "^4.1.1",
         "waypoints": "^4.0.1",
         "wow.js": "^1.2.2"
     }

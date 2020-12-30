@@ -13,17 +13,21 @@ class PagesController extends Controller
         return view('pages.index');
     }
 
-    public function contactoMail(){
-        $data = request()->validate([
+    public function contactoMail(Request $request){
+
+        $data = $this->validate($request, [
             'nombre' => 'required',
             'email' => 'required',
             'telefono' => 'required',
             'mensaje' => 'required',
         ]);
 
-        //Mail::to('puntocodepy@gmail.com')->queue(new MessageReceived($data));
+        Mail::to('puntocodepy@gmail.com')->send(new MessageReceived($data));
+        return response()->json([$request->all()]);
+
+        /*//Mail::to('puntocodepy@gmail.com')->queue(new MessageReceived($data));
         Mail::to('puntocodepy@gmail.com')->send(new MessageReceived($data));
         return new MessageReceived($data);
-        //return back()->with('flash', 'La consulta ha sido enviada correctamente');
+        //return back()->with('flash', 'La consulta ha sido enviada correctamente');*/
     }
 }

@@ -7,7 +7,8 @@
                 <h5 class="modal-title text-primary" id="modal-web">Cómo podemos ayudarte?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
             </div>
-            <div class="modal-body pt-0">
+            <form-email></form-email>
+            {{-- <div class="modal-body pt-0">
                 <span class="text-modal text-black-50 font-italic d-block">Nos encantaria ayudar a lograr tus Objetivos.</span>
                 <span class="text-modal text-black-50 font-italic">Completa el formulario y te responderemos en la brevedad posible</span>
                 <form method="POST" action="{{ route('enviar-consulta') }}" class="mt-3" novalidate>
@@ -58,7 +59,7 @@
                     </div>
 
                 </form>
-            </div>
+            </div> --}}
         </div>
     </div>
 </div>
