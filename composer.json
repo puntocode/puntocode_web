@@ -15,7 +15,9 @@
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.0",
         "laravel/ui": "^3.0",
-        "laraveles/spanish": "^1.5"
+        "laraveles/spanish": "^1.5",
+        "s-ichikawa/laravel-sendgrid-driver": "^3.0",
+        "io-digital/laravel-sendgrid-driver": "^1.0"
     },
     "require-dev": {
         "facade/ignition": "^2.3.6",

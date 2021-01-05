@@ -23,11 +23,7 @@ class PagesController extends Controller
         ]);
 
         Mail::to('puntocodepy@gmail.com')->send(new MessageReceived($data));
+        //Mail::to('puntocodepy@gmail.com')->queue(new MessageReceived($data));
         return response()->json([$request->all()]);
-
-        /*//Mail::to('puntocodepy@gmail.com')->queue(new MessageReceived($data));
-        Mail::to('puntocodepy@gmail.com')->send(new MessageReceived($data));
-        return new MessageReceived($data);
-        //return back()->with('flash', 'La consulta ha sido enviada correctamente');*/
     }
 }
