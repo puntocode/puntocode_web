@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<html lang="es">
 <head>
 
     <!-- CSRF Token -->
@@ -9,6 +9,9 @@
     <meta name="author" content="Puntocode Paraguay">
     <meta name="robots" content="ALL">
     <meta name="robots" content="INDEX,FOLLOW">
+    <meta name="Title" content="Desarrollo Web y Aplicaciones Moviles">
+    <meta name="Description" content="Puntocode. Desarrollo Web y Aplicaciones Moviles en Paraguay, Apps a medida para cada negocio o emprendimiento">
+    <meta name="keywords" content="desarrollo web, sitio web, sistema web, aplicaciones moviles, apps, web, Web a medida para tu negocio">
 
     <title>Puntocode Paraguay</title>
 
