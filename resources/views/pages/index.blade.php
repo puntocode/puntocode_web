@@ -6,12 +6,13 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <meta name="author" content="Puntocode Paraguay">
-    <meta name="robots" content="ALL">
-    <meta name="robots" content="INDEX,FOLLOW">
-    <meta name="Title" content="Desarrollo Web y Aplicaciones Moviles">
-    <meta name="Description" content="Puntocode. Desarrollo Web y Aplicaciones Moviles en Paraguay, Apps a medida para cada negocio o emprendimiento">
+    <meta name="title" content="Desarrollo Web y Movil">
+    <meta name="description" content="Puntocode. Desarrollo Web y Aplicaciones Moviles en Paraguay, Apps a medida para cada negocio o emprendimiento">
     <meta name="keywords" content="desarrollo web, sitio web, sistema web, aplicaciones moviles, apps, web, Web a medida para tu negocio">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="language" content="Spanish">
+    <meta name="author" content="Federico Lopez">
 
     <title>Puntocode Paraguay</title>
 
